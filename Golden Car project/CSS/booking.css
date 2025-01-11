@@ -1,0 +1,119 @@
+/* booking.css - Styles for the booking page */
+
+h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.step select, 
+.step input[type="date"], 
+.step button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFD700;
+    transition: 0.3s;
+}
+
+.step select:hover, 
+.step input[type="date"]:hover, 
+.step button:hover {
+    border-color: #FFC107;
+    background-color: #333;
+    color: #FFC107;
+}
+
+/* أزرار التنقل */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-buttons button {
+    width: 48%;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: #FFC107;
+}
+
+/* زر التأكيد */
+.confirm-btn {
+    background-color: #FFD700;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.confirm-btn:hover {
+    background-color: #FFC107;
+}
+
+/* ملخص الحجز */
+.summary {
+    background-color: #222;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.summary h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    margin: 5px 0;
+    color: #FFF;
+}
+
+/* الرسائل */
+.message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+}
+
+.success {
+    color: #4CAF50;
+    background-color: #222;
+}
+
+.error {
+    color: #F44336;
+    background-color: #222;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Car - Booking</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/booking.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Golden Car</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="carslist.html">Cars</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="history.php">History</a></li>
+                </ul>
+            </nav>
+            <button class="logout-button" onclick="logout()">Log Out</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-steps">
+            <div class="container">
+                <h2>Book Your Car</h2>
+
+                <div id="step-1" class="step">
+                    <h3>Step 1: Select Car Type</h3>
+                    <button onclick="selectCarType('sedan')">Sedan</button>
+                    <button onclick="selectCarType('suv')">4x4</button>
+                    <button onclick="selectCarType('motorcycle')">Motorcycle</button>
+                </div>
+
+                <div id="step-2" class="step" style="display: none;">
+                    <h3>Step 2: Select Car</h3>
+                    <div id="car-list"></div>
+                    <button onclick="goBack(1)" id="back-btn">Back</button>
+                </div>
+
+                <div id="step-3" class="step" style="display: none;">
+                    <h3>Step 3: Select Dates</h3>
+                    <label for="pickup-date">Pick-up Date:</label>
+                    <input type="date" id="pickup-date">
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date">
+                    <button onclick="goBack(2)">Back</button>
+                    <button onclick="confirmBooking()">Next</button>
+                </div>
+
+                <div id="step-4" class="step" style="display: none;">
+                    <h3>Step 4: Confirm Booking</h3>
+                    <div id="booking-summary"></div>
+                    <button onclick="goBack(3)">Back</button>
+                    <button onclick="finalizeBooking()">Confirm</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Golden Car. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/booking.js"></script>
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>

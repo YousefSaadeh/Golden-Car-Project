@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(150deg, black, black, gold);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  background: #222;
+  border-radius: 25px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ffbb00, #0000, #000000);
+  z-index: -1;
+  padding: 1.5px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sign-in-btn {
+  background-color: gold;
+  color: black;
+}
+
+.sign-in-btn:hover {
+  background-color: black;
+  color: gold;
+}
+
+.sign-up-btn {
+  background-color: gold;
+  color: black;
+}
+
+.sign-up-btn:hover {
+  background-color: black;
+  color: gold;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+}

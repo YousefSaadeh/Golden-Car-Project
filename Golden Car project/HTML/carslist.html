@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Car - Cars List</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/carslist.css">
+    <script>
+        function showCategory(category) {
+            document.querySelectorAll('.car-category').forEach((el) => {
+                el.style.display = 'none';
+            });
+            document.getElementById(category).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Golden Car</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="carslist.html">Cars</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="history.php">History</a></li>
+                </ul>
+            </nav>
+            <button class="logout-button" onclick="logout()">Log Out</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="car-selection">
+            <div class="container">
+                <h2>Select Car Category</h2>
+                <div class="category-buttons">
+                    <button class="btn" onclick="showCategory('sedan')">Sedans</button>
+                    <button class="btn" onclick="showCategory('suv')">4x4 Vehicles</button>
+                    <button class="btn" onclick="showCategory('motorcycles')">Motorcycles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sedans Category -->
+        <section id="sedan" class="car-category" style="display: none;">
+            <div class="container">
+                <h2>Sedans</h2>
+                <div class="car-item">
+                    <img src="../Images/ToyotaCamry.png" alt="Toyota Camry">
+                    <h3>Toyota Camry</h3>
+                    <p>Price: 30jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/HondaAccord.png" alt="Honda Accord">
+                    <h3>Honda Accord</h3>
+                    <p>Price: 30jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/BMW3Series.png" alt="BMW 3 Series">
+                    <h3>BMW 3 Series</h3>
+                    <p>Price: 45jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/MercedesBenzS-Class.png" alt="Mercedes-Benz E-Class">
+                    <h3>Mercedes-Benz E-Class</h3>
+                    <p>Price: 50jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4x4 Category -->
+        <section id="suv" class="car-category" style="display: none;">
+            <div class="container">
+                <h2>4x4 Vehicles</h2>
+                <div class="car-item">
+                    <img src="../Images/FordF150Raptor.png" alt="Ford F-150 Raptor">
+                    <h3>Ford F-150</h3>
+                    <p>Price: 50jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/ChevroletSilverado.png" alt="Chevrolet Silverado">
+                    <h3>Chevrolet Silverado</h3>
+                    <p>Price: 50jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/ToyotaLandCruiser.png" alt="Toyota Land Cruiser">
+                    <h3>Toyota Land Cruiser</h3>
+                    <p>Price: 50jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/NissanPatrol.png" alt="Nissan Patrol">
+                    <h3>Nissan Patrol</h3>
+                    <p>Price: 50jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motorcycles Category -->
+        <section id="motorcycles" class="car-category" style="display: none;">
+            <div class="container">
+                <h2>Motorcycles</h2>
+                <div class="car-item">
+                    <img src="../Images/HarleyDavidsonSportster.png" alt="Harley Davidson">
+                    <h3>Harley Davidson Sportster</h3>
+                    <p>Price: 20jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/YamahaYZF-R6.png" alt="Yamaha YZF-R6">
+                    <h3>Yamaha YZF-R6</h3>
+                    <p>Price: 25jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/SuzukiGSX-R1000.png" alt="Suzuki GSX-R1000">
+                    <h3>Suzuki GSX-R1000</h3>
+                    <p>Price: 30jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+                <div class="car-item">
+                    <img src="../Images/KawasakiNinjaH2.png" alt="Kawasaki Ninja H2">
+                    <h3>Kawasaki Ninja H2</h3>
+                    <p>Price: 35jd per day</p>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Golden Car. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>

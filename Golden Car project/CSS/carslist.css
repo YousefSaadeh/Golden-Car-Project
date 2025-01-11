@@ -1,0 +1,83 @@
+/* carslist.css - Styles specific to the Cars List page */
+
+.cars-list {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000;
+    color: #FFD700;
+}
+
+.category-buttons {
+    margin-bottom: 30px;
+}
+
+.category-buttons button {
+    padding: 12px 20px;
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.category-buttons button:hover {
+    background-color: #FFC107;
+}
+
+.car-category {
+    text-align: center;
+    display: none;
+}
+
+.car-item {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background-color: #111;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+}
+
+.car-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.car-item p {
+    font-size: 1.2em;
+    color: #FFD700;
+    margin: 10px 0 20px;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.car-item .btn {
+    background-color: #FFD700;
+    color: #000;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.car-item .btn:hover {
+    background-color: #FFC107;
+}

@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" name="password" placeholder="Password" required>
                     <button type="button" class="toggle-password">👁️</button>
                 </div>
-                <p>Don't have an account? <a href="signup.php">Sign up</a></p>
+                <p>Don't have an account ? <a href="signup.php">Sign up</a></p>
                 <button type="submit" class="sign-in-btn">SIGN IN</button>
             </form>
         </div>
@@ -59,3 +59,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="../JavaScript/script.js"></script>
 </body>
 </html>
+
